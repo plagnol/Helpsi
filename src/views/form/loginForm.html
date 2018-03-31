@@ -1,0 +1,49 @@
+<form class="form-horizontal" role="form" method="POST" action="../controller/cibleLogin.php">
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Merci de vous connecter</h4>
+                <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group has-danger">
+                <label class="sr-only" for="email">E-Mail</label>
+                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group-addon" style="width: 2.6rem">
+                        <i class="fa fa-at"></i>
+                    </div>
+                    <input type="email" name="maillogin" class="form-control"
+                    id="email" placeholder="you@example.com" required autofocus>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="sr-only" for="password">Password</label>
+                <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group-addon" style="width: 2.6rem">
+                        <i class="fa fa-key"></i>
+                    </div>
+                    <input type="password" name="pwlogin" class="form-control"
+                    id="password" placeholder="Password" required>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-control-feedback">
+                <span class="text-danger align-middle"> <!-- Put password error message here --></span>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="padding-top: 1rem">
+        <div class="col-md-6">
+            <button name="submit" type="submit" class="btn btn-success">
+                <i class="fa fa-sign-in"></i> Se connecter
+            </button>
+            <a class="btn btn-link" href="src/managers/resetpassword.php">Mot de passe oublié ?</a>
+        </div>
+    </div>
+</form>

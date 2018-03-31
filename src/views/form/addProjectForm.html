@@ -1,0 +1,23 @@
+<form action="../controller/cibleAddProjectForm.php" method="post">
+    <div class="form-group">
+        <label for="name">Nom : </label>
+        <input class="form-control" name="name" id="name" placeholder="Le nom du projet..." required autofocus>
+    </div>
+    <div class="form-group">
+        <label for="description">Description : </label>
+        <textarea class="form-control" name="description" id="description" placeholder="La description du projet..." required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="img">Choississez une image pour le projet : </label>
+        <input class="form-control" name="img" id="img" placeholder="Rentrez le lien de l'image" required>
+    </div>
+    <div class="form-group">
+        <label for="github">Github : </label>
+        <input class="form-control" name="github" id="github" placeholder="Le git du projet..." required>
+    </div>
+    <div class="form-group">
+        <label for="slack">Slack : </label>
+        <input class="form-control" name="slack" id="slack" placeholder="Le slack du projet..." required>
+    </div>
+    <input type="submit" value="Ajouter le projet" class="form-control" name="submit">
+</form>
